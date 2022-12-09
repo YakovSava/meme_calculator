@@ -1,0 +1,1 @@
+Hi! This is my first public project on github - a meme growth calculator that does nothing. Sorry that there are no other languages, only Russian

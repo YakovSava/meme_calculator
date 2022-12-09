@@ -2,10 +2,10 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "The most useful program in the world"
-#define MyAppVersion "0.1 alpha"
+#define MyAppVersion "0.2 alpha"
 #define MyAppPublisher "YakovSava"
 #define MyAppURL "https://www.github.com/YakovSava"
-#define MyAppExeName "calculator1.exe"
+#define MyAppExeName "calculator.exe"
 #define MyAppAssocName MyAppName + " File"
 #define MyAppAssocExt ".exe"
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
@@ -24,10 +24,10 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\TMUPITW
 ChangesAssociations=yes
 DisableProgramGroupPage=yes
-LicenseFile=C:\Users\User\Desktop\IT\Python\Tkinter_test\dist\license.txt
+LicenseFile=C:\folder\before\your\license.txt
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
-OutputDir=C:\Users\User\Desktop\IT\Python\Tkinter_test\dist
+OutputDir=C:\folder\before\your\output
 OutputBaseFilename=mysetup
 Compression=lzma
 SolidCompression=yes
@@ -42,7 +42,7 @@ Name: "ukrainian"; MessagesFile: "compiler:Languages\Ukrainian.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\User\Desktop\IT\Python\Tkinter_test\dist\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\path\before\your\source\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
